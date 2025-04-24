@@ -12,30 +12,46 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
+
+    p.description {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
     .skills {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 2rem;
-      padding: 2rem;
     }
+
     .skill-icon {
       position: relative;
       width: 64px;
       height: 64px;
       cursor: pointer;
     }
+
     .skill-icon img {
       width: 100%;
       height: 100%;
     }
+
     .tooltip {
       display: none;
       position: absolute;
@@ -50,29 +66,69 @@
       white-space: nowrap;
       z-index: 10;
     }
+
     .skill-icon:hover .tooltip {
       display: block;
+    }
+
+    ul.interests {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    ul.interests li {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      padding: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>rahmed</h1>
-    <p>Rust Developer | Embedded Systems | Linux Enthusiast</p>
+    <p class="description">Rust Developer | Embedded Systems | Linux Enthusiast</p>
   </header>
 
-  <section class="skills">
-    <div class="skill-icon">
-      <img src="https://cdn.simpleicons.org/rust/white" alt="Rust">
-      <div class="tooltip">Rust — System programming language</div>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-icon">
+        <img src="https://cdn.simpleicons.org/rust/white" alt="Rust">
+        <div class="tooltip">Rust — System programming language</div>
+      </div>
+      <div class="skill-icon">
+        <img src="https://cdn.simpleicons.org/docker/white" alt="Docker">
+        <div class="tooltip">Docker — Containerization platform</div>
+      </div>
+      <!-- Add more skill icons here -->
     </div>
-    <div class="skill-icon">
-      <img src="https://cdn.simpleicons.org/docker/white" alt="Docker">
-      <div class="tooltip">Docker — Containerization platform</div>
-    </div>
-    <!-- Diğer logoları da buraya eklersin -->
   </section>
 
-  <!-- İletişim ve footer sonra eklenecek -->
+  <section>
+    <h2>Interests</h2>
+    <ul class="interests">
+      <li>📡 Hamradio (Amateur Radio)</li>
+      <li>⚡ Electrical & Electronics (E&E)</li>
+      <li>🧪 Chemistry</li>
+      <li>🛠️ Experimental tech and science</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com" style="color:#8ac">you@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/rahmed" style="color:#8ac">@rahmed</a></p>
+    <!-- Add more links or contact options -->
+  </section>
+
+  <footer>
+    <p>Built by rahmed — 2025</p>
+  </footer>
 </body>
 </html>
