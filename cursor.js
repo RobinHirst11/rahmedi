@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("mousedown", () => {
-    cursor.style.backgroundImage = "url('cursor-click.png')";
+    cursor.style.backgroundImage = "url('cursor-normal.png')";
   });
   document.addEventListener("mouseup", () => {
     cursor.style.backgroundImage = "url('cursor-normal.png')";
