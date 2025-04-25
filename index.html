@@ -14,7 +14,7 @@
                 font-family: "Segoe UI", sans-serif;
                 margin: 0;
                 padding: 0;
-                cursor: crosshair;
+                cursor: crosshair; /* Genel cursor */
             }
 
             header {
@@ -30,6 +30,11 @@
             p.description {
                 font-size: 1rem;
                 color: #ccc;
+            }
+
+            /* Metin üzerine gelince cursor text olacak */
+            p.description:hover {
+                cursor: text; /* I-beam cursor */
             }
 
             section {
