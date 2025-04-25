@@ -80,7 +80,7 @@ p.description {
     color: var(--secondary-text-color);
     max-width: 750px;
     margin: 0 auto;
-    cursor: text;
+    cursor: none;
 }
 
 section {
@@ -121,7 +121,7 @@ h2 {
         box-shadow 0.3s ease;
     width: 100%;
     box-sizing: border-box;
-    cursor: default;
+    cursor: none;
 }
 
 .skill-card:hover {
