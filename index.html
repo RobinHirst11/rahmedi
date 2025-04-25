@@ -14,7 +14,7 @@
                 font-family: "Segoe UI", sans-serif;
                 margin: 0;
                 padding: 0;
-                cursor: crosshair; /* Genel cursor */
+                cursor: crosshair;
             }
 
             header {
@@ -30,11 +30,13 @@
             p.description {
                 font-size: 1rem;
                 color: #ccc;
+                text-align: center; /* Description'ı ortaladık */
+                max-width: 800px; /* Maksimum genişlik ekledik */
+                margin: 0 auto; /* Ortalamak için auto margin */
             }
 
-            /* Metin üzerine gelince cursor text olacak */
             p.description:hover {
-                cursor: text; /* I-beam cursor */
+                cursor: text;
             }
 
             section {
@@ -96,6 +98,11 @@
                 text-align: center;
                 color: #777;
             }
+
+            /* Yeni stil: section'ları birbirinden ayırıyoruz */
+            section h2 {
+                margin-top: 2rem;
+            }
         </style>
     </head>
     <body>
@@ -144,7 +151,6 @@
                         Git - Version Control System | 100/100
                     </div>
                 </div>
-                <!-- More skills can be added here -->
             </div>
         </section>
 
