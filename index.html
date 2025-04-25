@@ -6,194 +6,96 @@
         <title>Rahmed's Website</title>
 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-        <style>
-            body {
-                background-color: #0f0f0f;
-                color: #f0f0f0;
-                font-family: "Segoe UI", sans-serif;
-                margin: 0;
-                padding: 0;
-                cursor: crosshair;
-            }
-
-            header {
-                padding: 2rem;
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-                margin-bottom: 0.5rem;
-            }
-
-            p.description {
-                font-size: 1rem;
-                color: #ccc;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-            }
-
-            p.description:hover {
-                cursor: text;
-            }
-
-            section {
-                padding: 2rem;
-                text-align: center;
-            }
-
-            .skills {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 2rem;
-            }
-
-            .skill-icon {
-                position: relative;
-                width: 64px;
-                height: 64px;
-                cursor: pointer;
-            }
-
-            .skill-icon img {
-                width: 100%;
-                height: 100%;
-            }
-
-            .tooltip {
-                display: none;
-                position: absolute;
-                bottom: -50px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: #1e1e1e;
-                color: #fff;
-                padding: 0.5rem 1rem;
-                border-radius: 6px;
-                font-size: 0.8rem;
-                white-space: nowrap;
-                z-index: 10;
-            }
-
-            .skill-icon:hover .tooltip {
-                display: block;
-            }
-
-            ul.interests {
-                list-style: none;
-                padding: 0;
-                font-size: 1rem;
-            }
-
-            ul.interests li {
-                margin: 0.5rem 0;
-            }
-
-            footer {
-                padding: 2rem;
-                font-size: 0.9rem;
-                text-align: center;
-                color: #777;
-            }
-
-            section h2 {
-                margin-top: 2rem;
-            }
-        </style>
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <header>
-            <h1>Rahmed</h1>
-            <p class="description">
-                Hello, I'm Rahmed — a 17-year-old developer from Turkey,
-                specializing in systems programming, computer networks, and
-                cybersecurity. I primarily work with Rust, focusing on building
-                secure and efficient backend systems. I'm also a licensed
-                amateur radio operator with a strong curiosity for how
-                technology and communication systems interact. In the future, I
-                aim to found a technology company centered on innovation and
-                high-impact engineering.
-            </p>
-        </header>
+        <div class="container">
+            <header>
+                <h1>Rahmed</h1>
+                <p class="description">
+                    Hello, I'm Rahmed — a 17-year-old developer from Turkey,
+                    specializing in systems programming, computer networks, and
+                    cybersecurity. I primarily work with Rust, focusing on
+                    building secure and efficient backend systems. I'm also a
+                    licensed amateur radio operator with a strong curiosity for
+                    how technology and communication systems interact. In the
+                    future, I aim to found a technology company centered on
+                    innovation and high-impact engineering.
+                </p>
+            </header>
 
-        <section>
-            <h2>My Skills</h2>
-            <div class="skills">
-                <div class="skill-icon">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tokio_logo.svg"
-                        alt="Tokio"
-                        style="filter: brightness(0) invert(1)"
-                    />
-                    <div class="tooltip">
-                        Tokio — Asynchronous runtime for Rust | 100/98
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <div class="skill-card">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tokio_logo.svg"
+                            alt="Tokio"
+                        />
+                        <div class="skill-name">Tokio</div>
+                    </div>
+                    <div class="skill-card">
+                        <img
+                            src="https://cdn.simpleicons.org/rust/white"
+                            alt="Rust"
+                        />
+                        <div class="skill-name">Rust</div>
+                    </div>
+                    <div class="skill-card">
+                        <img
+                            src="https://cdn.simpleicons.org/git/white"
+                            alt="Git"
+                        />
+                        <div class="skill-name">Git</div>
+                    </div>
+                    <div class="skill-card">
+                        <img
+                            src="https://cdn.simpleicons.org/linux/white"
+                            alt="Linux"
+                        />
+                        <div class="skill-name">Linux</div>
                     </div>
                 </div>
-                <div class="skill-icon">
-                    <img
-                        src="https://cdn.simpleicons.org/rust/white"
-                        alt="Rust"
-                    />
-                    <div class="tooltip">
-                        Rust — Programming language | 100/100
-                    </div>
-                </div>
-                <div class="skill-icon">
-                    <img
-                        src="https://cdn.simpleicons.org/git/white"
-                        alt="Git"
-                    />
-                    <div class="tooltip">
-                        Git - Version Control System | 100/100
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Interests</h2>
-            <ul class="interests">
-                <li>Ham radio (Amateur Radio)</li>
-                <li>Electrical & Electronics (E&E)</li>
-                <li>Chemistry</li>
-                <li>Technology and Science</li>
-            </ul>
-        </section>
+            <section id="interests">
+                <h2>Interests</h2>
+                <ul class="interests">
+                    <li>Ham radio (Amateur Radio)</li>
+                    <li>Electrical & Electronics (E&E)</li>
+                    <li>Chemistry</li>
+                    <li>Technology and Science</li>
+                    <li>Cybersecurity</li>
+                    <li>Networking</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>
-                <a
-                    href="mailto:rahmedyev@gmail.com"
-                    style="color: #c9c9c9; vertical-align: middle"
-                >
-                    rahmedyev@gmail.com
-                </a>
-            </p>
-            <p>
-                <a
-                    href="https://github.com/rahmedi"
-                    style="color: #c9c9c9; vertical-align: middle"
-                >
-                    github | rahmedi
-                </a>
-            </p>
+            <section id="contact">
+                <h2>Contact</h2>
 
-            <p>
-                <a
-                    href="https://discord.com/users/815642590090362910"
-                    style="color: #c9c9c9; vertical-align: middle"
-                >
-                    discord | rahmed.rs
-                </a>
-            </p>
-        </section>
+                <p>
+                    <a href="mailto:rahmedyev@gmail.com">rahmedyev@gmail.com</a>
+                </p>
+                <p>
+                    <a href="https://github.com/rahmedi">github.com/rahmedi</a>
+                </p>
+                <p>
+                    <a href="https://discord.com/users/815642590090362910">
+                        Discord: rahmed.rs
+                    </a>
+                </p>
+            </section>
 
-        <footer>
-            <p>Built by rahmed — 2025 All rights reserved</p>
-        </footer>
+            <footer>
+                <p>&copy; 2025 Rahmed — All rights reserved</p>
+            </footer>
+        </div>
     </body>
 </html>
