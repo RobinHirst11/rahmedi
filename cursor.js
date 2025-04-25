@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const hoverable = document.querySelectorAll('a, button, [data-hover="true"]');
   hoverable.forEach((el) => {
     el.addEventListener("mouseenter", () => {
-      cursor.style.backgroundImage = "url('cursor-read.png')";
+      cursor.style.backgroundImage = "url('cursor-normal.png')";
     });
     el.addEventListener("mouseleave", () => {
       cursor.style.backgroundImage = "url('cursor-normal.png')";
