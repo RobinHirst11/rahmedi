@@ -13,14 +13,13 @@
 
 #cursor {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 32px;
     height: 32px;
     pointer-events: none;
-    z-index: 9999;
-    background: url("cursor-normal.png") no-repeat center center;
+    background-image: url("cursor-normal.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
     transform: translate(-50%, -50%);
 }
 
@@ -35,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.7;
-    cursor: default;
+    cursor: none;
     overflow-x: hidden;
 }
 
