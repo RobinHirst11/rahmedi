@@ -237,15 +237,14 @@ ul.interests {
 }
 
 ul.interests li {
-    background-color: var(--card-bg-color);
+    background-color: transparent;
     color: var(--secondary-text-color);
-    padding: 0.6rem 1.2rem;
-    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0;
     font-size: 0.95rem;
-    border: 1px solid var(--border-color);
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+    border: none;
+    font-style: italic;
+    opacity: 0.8;
 }
 
 #contact {
