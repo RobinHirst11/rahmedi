@@ -1,153 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rahmed's Website</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Rahmed - Developer specializing in systems programming, networks and cybersecurity"/>
+    <title>Rahmed's Portfolio</title>
 
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-    <body>
-        <div id="cursor"></div>
-        <div class="container">
-            <header>
-                <h2>About Me</h2>
-                <p class="description">
-                    Hello, I'm Rahmed — a 17-year-old developer from Turkey,
-                    specializing in systems programming, computer networks, and
-                    cybersecurity. I primarily work with Rust, focusing on
-                    building secure and efficient backend systems. I'm also a
-                    licensed amateur radio operator with a strong curiosity for
-                    how technology and communication systems interact. In the
-                    future, I aim to found a technology company centered on
-                    innovation and high-impact engineering.
-                </p>
-            </header>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div id="cursor"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Rahmed</h1>
+            <p class="description">
+                Hello, I'm a 17-year-old developer from Turkey,
+                specializing in systems programming, computer networks, and
+                cybersecurity. I primarily work with Rust, focusing on
+                building secure and efficient backend systems. I'm also a
+                licensed amateur radio operator with a strong curiosity for
+                how technology and communication systems interact.
+            </p>
+        </header>
 
-            <section id="skills">
-                <h2>My Skills</h2>
-                <div class="skills">
-                    <div class="skill-card">
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tokio_logo.svg"
-                            alt="Tokio"
-                        />
-                        <div class="skill-name">Tokio</div>
-                        <div class="tooltip">
-                            Async Runtime - Skill Rate: ★★★★★
-                        </div>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/rust/444" alt="Rust"/>
+                    <div class="skill-name">Rust</div>
+                    <div class="tooltip">
+                        Programming Language - Skill Rate: ★★★★★
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/rust/white"
-                            alt="Rust"
-                        />
-                        <div class="skill-name">Rust</div>
-                        <div class="tooltip">
-                            Programming Language - Skill Rate: ★★★★★
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tokio_logo.svg" alt="Tokio"/>
+                    <div class="skill-name">Tokio</div>
+                    <div class="tooltip">
+                        Async Runtime - Skill Rate: ★★★★★
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/git/white"
-                            alt="Git"
-                        />
-                        <div class="skill-name">Git</div>
-                        <div class="tooltip">
-                            Version Control System - Skill Rate: ★★★★☆
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/linux/444" alt="Linux"/>
+                    <div class="skill-name">Linux</div>
+                    <div class="tooltip">
+                        Operating Systems Family - Skill Rate: ★★★★★
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/linux/white"
-                            alt="Linux"
-                        />
-                        <div class="skill-name">Linux</div>
-                        <div class="tooltip">
-                            Operating Systems Family - Skill Rate: ★★★★★
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/git/444" alt="Git"/>
+                    <div class="skill-name">Git</div>
+                    <div class="tooltip">
+                        Version Control System - Skill Rate: ★★★★☆
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/gnubash/white"
-                            alt="Bash"
-                        />
-                        <div class="skill-name">Bash</div>
-                        <div class="tooltip">
-                            Programming Language - Skill Rate: ★★★☆☆
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/fishshell/444" alt="Fish"/>
+                    <div class="skill-name">Fish</div>
+                    <div class="tooltip">
+                        Linux Shell - Skill Rate: ★★★★★
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/zedindustries/white"
-                            alt="Zed"
-                        />
-                        <div class="skill-name">Zed</div>
-                        <div class="tooltip">
-                            Code Editor - Skill Rate: ★★★★☆
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/espressif/444" alt="Esp"/>
+                    <div class="skill-name">Esp</div>
+                    <div class="tooltip">
+                        Microcontroller - Skill Rate: ★★★★☆
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/fishshell/white"
-                            alt="Fish"
-                        />
-                        <div class="skill-name">Fish</div>
-                        <div class="tooltip">
-                            Linux Shell - Skill Rate: ★★★★★
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/gnubash/444" alt="Bash"/>
+                    <div class="skill-name">Bash</div>
+                    <div class="tooltip">
+                        Programming Language - Skill Rate: ★★★☆☆
                     </div>
-                    <div class="skill-card">
-                        <img
-                            src="https://cdn.simpleicons.org/espressif/white"
-                            alt="Esp"
-                        />
-                        <div class="skill-name">Esp</div>
-                        <div class="tooltip">
-                            Microcontroller - Skill Rate: ★★★★☆
-                        </div>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <img src="https://cdn.simpleicons.org/zedindustries/444" alt="Zed"/>
+                    <div class="skill-name">Zed</div>
+                    <div class="tooltip">
+                        Code Editor - Skill Rate: ★★★★☆
                     </div>
-            </section>
-            <section id="interests">
-                <h2>Interests</h2>
-                <ul class="interests">
-                    <li>Ham radio (Amateur Radio)</li>
-                    <li>Electrical & Electronics (E&E)</li>
-                    <li>Chemistry</li>
-                    <li>Technology and Science</li>
-                    <li>Cybersecurity</li>
-                    <li>Networking</li>
-                </ul>
-            </section>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interests">
+            <h2>Interests</h2>
+            <ul class="interests">
+                <li>Ham Radio</li>
+                <li>Electrical & Electronics</li>
+                <li>Cybersecurity</li>
+                <li>Chemistry</li>
+                <li>Networking</li>
+                <li>Technology</li>
+            </ul>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <a href="mailto:rahmedyev@gmail.com">rahmedyev@gmail.com</a>
+            </p>
+            <p>
+                <a href="https://github.com/rahmedi" rel="noopener noreferrer">github.com/rahmedi</a>
+            </p>
+            <p>
+                <a href="https://discord.com/users/815642590090362910">Discord: rahmed.rs</a>
+            </p>
+        </section>
 
-                <p>
-                    <a href="mailto:rahmedyev@gmail.com">rahmedyev@gmail.com</a>
-                </p>
-                <p>
-                    <a href="https://github.com/rahmedi">github.com/rahmedi</a>
-                </p>
-                <p>
-                    <a href="https://discord.com/users/815642590090362910">
-                        Discord: rahmed.rs
-                    </a>
-                </p>
-            </section>
-
-            <footer>
-                <p>&copy; 2025 Rahmed — All rights reserved</p>
-            </footer>
-        </div>
-        <script src="cursor.js"></script>
-    </body>
+        <footer>
+            <p>&copy; 2025 Rahmed — All rights reserved</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
 </html>
