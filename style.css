@@ -248,12 +248,6 @@ ul.interests li {
         color 0.3s ease;
 }
 
-ul.interests li:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-    border-color: var(--accent-color);
-}
-
 #contact {
     text-align: center;
 }
