@@ -1,6 +1,9 @@
 window.addEventListener("DOMContentLoaded", () => {
   const cursor = document.getElementById("cursor");
   if (!cursor) return;
+  if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
+    document.body.classList.add("touch-device");
+  }
 
   document.addEventListener("mousemove", (e) => {
     cursor.style.left = `${e.clientX}px`;

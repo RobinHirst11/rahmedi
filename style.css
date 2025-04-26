@@ -133,7 +133,7 @@ h2 {
     padding: 8px;
     position: absolute;
     z-index: 1;
-    bottom: 110%; 
+    bottom: 110%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -400,5 +400,8 @@ ul.interests li:nth-child(4) {
     }
     #contact a {
         font-size: 1rem;
+    }
+    .touch-device #cursor {
+        display: none;
     }
 }
